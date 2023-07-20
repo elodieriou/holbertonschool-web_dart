@@ -7,7 +7,8 @@ class User extends Password {
   double height;
   String user_password;
 
-  User({required this.id, required this.name, required this.age, required this.height, required this.user_password}) : super(password: user_password);
+  User({required this.id, required this.name, required this.age, required this.height, required this.user_password})
+      : super(password: user_password);
 
   Map<String, dynamic> toJson() {
     return {
@@ -15,7 +16,6 @@ class User extends Password {
       'name': name,
       'age': age,
       'height': height,
-      'user_password': user_password
     };
   }
 
@@ -31,7 +31,7 @@ class User extends Password {
 
   @override
   bool isValid() {
-    return user_password.isNotEmpty && super.isValid();
+    return Password(password: user_password).isValid();
   }
 
   @override

@@ -1,6 +1,8 @@
 class Password {
   String _password = '';
 
+  Password({required String password}) : _password = password;
+
   bool isValid() {
 
     // Check password length

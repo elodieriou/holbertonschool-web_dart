@@ -7,9 +7,3 @@ Future<void> usersCount() async {
   // Print the number of users
   print(count);
 }
-
-// Simulated function to fetch user count from an API
-Future<int> fetchUsersCount() => Future.delayed(
-  const Duration(seconds: 2),
-      () => 19,
-);

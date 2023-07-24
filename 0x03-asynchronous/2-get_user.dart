@@ -8,8 +8,3 @@ Future<void> getUser() async {
     print('error caught: $error');
   }
 }
-
-Future<String> fetchUserData() => Future.delayed(
-  const Duration(seconds: 2),
-      () => throw 'Cannot locate user',
-);

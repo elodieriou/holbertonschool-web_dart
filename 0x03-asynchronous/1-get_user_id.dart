@@ -1,8 +1,8 @@
 import './1-util.dart';
 import 'dart:async';
-import 'dart:convert'; // For parsing JSON
+import 'dart:convert';
 
-Future<String> getUserID() async {
+Future<String> getUserId() async {
   String userDataJson = await fetchUserData();
 
   Map<String, dynamic> userData = jsonDecode(userDataJson);

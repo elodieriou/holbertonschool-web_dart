@@ -3,7 +3,8 @@ import 'dart:async';
 
 Future<void> getUser() async {
   try {
-    await fetchUserData();
+    String userData = await fetchUserData();
+    print(userData.toString());
   } catch (error) {
     print('error caught: $error');
   }
